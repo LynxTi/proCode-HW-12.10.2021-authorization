@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product.nameProduct</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+</head>
+<body>
+    <h1 class="title" data-id=<%= product.id %>>Product "<%= product.nameProduct %>"</h1>
+    <small><%= product.discription %></small>
+    <b><%= product.price %></b>
+    
+    <div class="commentsBlock">
+        <h1>Comments</h1>
+    </div>
+    <form action="" class="newCommentForm">
+        <input type="text" name="comment">
+        <button type="submit">Отправить</button>
+    </form>
+    <script src="/javascripts/product.js"></script>
+</body>
+</html>

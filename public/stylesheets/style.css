@@ -1,0 +1,19 @@
+.loginForm {
+  display: none;
+
+}
+
+.chatBlock {
+  display: none;
+}
+
+.showBlock {
+  display: block;
+}
+
+.usersMeseges {
+  border: 1px solid black;
+  height: 700px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}

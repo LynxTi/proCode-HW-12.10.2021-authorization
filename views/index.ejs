@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>authorization</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="singnInBlock">
+      <form action="" class="singInForm">
+        <input class="loginInput" name="nameUser" placeholder="Login">
+        <input type="text" class="passwordInput" name="passwordUser" placeholder="Password">
+        <button class="btnSingIn">Sing In</button>
+      </form>
+    </div>
+    <button class="createNewUser">Create Profile</button>
+    <div class="createUserBlock">
+      <form action="" class="createUserForm">
+        <h1>create User</h1>
+        <input type="text" class="nameUser" name="nameUser" placeholder="name">
+        <input type="text" class="passwordUser" name="passwordUser" placeholder="password">
+        <button class="btnCreateUser">Create New User</button>
+      </form>
+    </div>
+    <div class="contentBlock">Не авторизировано</div>
+    <a href="/acp/" class="acpLink">
+      <div class="linkBlock">Сздать продукт</div>
+    </a>
+    <div class="productsBlock"></div>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>
