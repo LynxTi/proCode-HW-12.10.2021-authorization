@@ -20,19 +20,16 @@ router.post('/createNewUser', upload.none(), async (req, res, next) => {
 router.post('/signIn', upload.none(), async (req, res) => {
   const {nameUser, passwordUser} = req.body;
   const rezalt = await authorizationCntr.login(nameUser, passwordUser);
-  console.log(rezalt);
+  
   if(rezalt.status === "logged in") {
     req.session.userId = rezalt.user.id;
+    res.json({profile: rezalt.user});
   }
-
-  console.log('id1:  ', req.session);
 });
 
 router.post('/getAllProducts', upload.none(), async (req, res) => {
   const products = await productCntrl.getAllproducts();
   res.json({products});
-
-  console.log('id3:  ', req.session);
 
 });
 
